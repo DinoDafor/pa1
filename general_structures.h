@@ -5,6 +5,8 @@ typedef enum {true, false} boolean;
 
 struct pipes {
     int fd[2];
+    boolean isBusy;
+
 } typedef pipe_t;
 
 struct environment {

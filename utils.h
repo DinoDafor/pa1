@@ -14,4 +14,9 @@ void set_default_state_live_processes(const int local_id, int* pProcesses, int p
 char* print_output(const char* message_format, const process_information_t* processInformation);
 int get_live_process_count(int* processes, int process_count);
 void receive_from_children(process_information_t* processInformation);
+struct poot{
+    int fd[2];
+    boolean isBusy;
+
+} typedef poots;
 #endif //PA1_UTILS_H
